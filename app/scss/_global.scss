@@ -1,0 +1,55 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: $text;
+}
+ul,li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #b8b8b8;
+}
+.container{
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;    
+}
+
+.title{
+    margin: 100px 0 141px;
+    font-size: 36px;
+    color: #4e4e4e;
+    position: relative;
+    text-align: center;
+
+}
+.title::before,
+.title::after{
+    position: absolute;
+    content: '' ;
+    height: 1px;
+    width: 75px;
+    background-color: #18cfab;
+    bottom: -33px;
+    left: 526px;
+}
+.title::after{
+    top: 76px;
+    left: 538px;
+}
+
+// 538
