@@ -30,11 +30,13 @@ body{
 }
 
 .title{
-    padding: 100px 0 141px;
+    // padding: 100px 0 141px;
     font-size: 36px;
     color: #4e4e4e;
     position: relative;
     text-align: center;
+    display: inline-block;
+    margin-bottom: 120px;
 
 }
 .title::before,
@@ -44,61 +46,16 @@ body{
     height: 1px;
     width: 75px;
     background-color: #18cfab;
-    bottom: 63px;
-    left: 45%;
+    top:calc(100% + 30px);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
     // margin-right: -50%;
 }
 .title::after{
-    bottom: 60px;
-    left: 47%;
+    top:calc(100% + 35px);
+    left: 53%;
 }
 
-// start tabsstyle
-.tab{
-    text-transform: uppercase;
-    cursor: pointer;
-    color: #f5f5f5;
-    font-size: 16px;
-    margin-right: 22px;
-    transition: all .3s;
-    position: relative;
-}
-.tab.active{
-    color: #18cfab;
-}
-.tab::before,
-.tab::after{
-    position: absolute;
-    content: '';
-    height: 2px;
-    width: 0;
-    background-color:#18cfab;
-    top: -11px;
-}
-.tab::after{
-    left: 0;
-    transition: all .3s;
-}
 
-.tab:hover{
-        color:#18cfab;
-}
-.tab:hover.tab::after{
-    width: 100%;
-}
-.tab.active::before{
-    width: 100%;
-}
-.tab-item{
-    display: none;
-} 
-.tab-item.active-tab{
-    display: block;
-}
-
-.tabs{
-    margin-bottom: 51px;
-}
-
-// end tabsstyle 
 

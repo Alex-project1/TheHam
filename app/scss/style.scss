@@ -27,11 +27,13 @@
         padding-right: 11px;
     }
 }
-.header__menu{
+
+.header__menu {
     padding-right: 30px;
-    
+
     margin-left: auto;
 }
+
 .menu__list {
     li {
         display: inline-block;
@@ -52,6 +54,7 @@
         }
     }
 }
+
 .menu__list-item::before {
     content: '';
     position: absolute;
@@ -61,7 +64,8 @@
     width: 0;
     transition: all .3s;
 }
-.menu__list-item:hover.menu__list-item::before{
+
+.menu__list-item:hover.menu__list-item::before {
     width: 100%;
 }
 
@@ -69,49 +73,57 @@
 
 // start creative
 
-.creative{
+.creative {
     height: 890px;
     background-color: #3c3c3c;
 }
-.creative__inner{
+
+.creative__inner {
     text-align: center;
 }
-.creative__text{
+
+.creative__text {
     padding-top: 245px;
     color: #fff;
-    &-ham{
+
+    &-ham {
         text-transform: uppercase;
         font-size: 35px;
-        span{
+
+        span {
             color: #18cfab;
         }
     }
-    &-title{
+
+    &-title {
         padding-top: 40px;
         text-transform: uppercase;
         font-size: 79px;
     }
-    &-buy{
+
+    &-buy {
         font-size: 34px;
         color: #d4d4d4;
     }
 }
 
-.creative__link{
+.creative__link {
     padding-top: 150px;
     display: flex;
     justify-content: center;
-    .link{
+
+    .link {
         color: #fff;
         width: 166px;
         background-color: #18cfab;
         margin-right: 28px;
         padding: 25px 0;
         border-radius: 3px;
-        position: relative;        
+        position: relative;
         transition: all .5s;
     }
-    .link::before{
+
+    .link::before {
         content: '';
         position: absolute;
         width: 0;
@@ -123,10 +135,11 @@
         border-top: 5px solid #18cfab;
         border-top-right-radius: 3px;
         border-top-left-radius: 3px;
-        
+
         transition: all .3s;
     }
-    .link::after{
+
+    .link::after {
         content: '';
         position: absolute;
         width: 166px;
@@ -139,10 +152,12 @@
         border-top-right-radius: 3px;
         border-top-left-radius: 3px;
     }
-    a:hover.link::before{
+
+    a:hover.link::before {
         width: 100%;
     }
-    .link:hover{
+
+    .link:hover {
         background-color: #fff;
         color: #18cfab;
         font-weight: 600;
@@ -154,35 +169,39 @@
 // end creative
 
 // start advantages 
-.advantages__wrapper{
+.advantages__wrapper {
     display: flex;
 }
 
-.advantages__item{
+.advantages__item {
     width: 100%;
-    background-color: #1c2a33;    
+    background-color: #1c2a33;
     height: 375px;
     text-align: center;
     padding-top: 105px;
     border-top: 7px solid #18cfab;
-    &-title{
+
+    &-title {
         padding-top: 45px;
         text-transform: uppercase;
         font-size: 20px;
         color: #18cfab;
     }
-    
-    a:hover{
+
+    a:hover {
         transform: scale(1.2);
     }
-    a{
+
+    a {
         transition: all .3s;
     }
 }
-.item-white{
+
+.item-white {
     border-top: 7px solid #fff;
     background-color: #18cfab;
-    .advantages__item-title{
+
+    .advantages__item-title {
         color: #fff;
     }
 }
@@ -191,28 +210,29 @@
 // end advantages 
 
 // start features 
-.features__inner{
+.features__inner {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 30px;
 }
 
-.features__item:hover{
-      box-shadow:
-   0 1px 4px rgba(0, 0, 0, .3),
-   -23px 0 20px -23px rgba(0, 0, 0, .8),
-   23px 0 20px -23px rgba(0, 0, 0, .8),
-   0 0 40px rgba(0, 0, 0, .1) inset;
+.features__item:hover {
+    box-shadow:
+        0 1px 4px rgba(0, 0, 0, .3),
+        -23px 0 20px -23px rgba(0, 0, 0, .8),
+        23px 0 20px -23px rgba(0, 0, 0, .8),
+        0 0 40px rgba(0, 0, 0, .1) inset;
 }
-.features__item{
+
+.features__item {
     width: 331px;
     margin-bottom: 70px;
     padding: 20px;
     transition: all .3s;
-    
-    &-title{
-        
+
+    &-title {
+
         color: #717171;
         font-size: 18px;
         padding: 24px 0;
@@ -221,7 +241,8 @@
         font-weight: 500;
         padding-left: 46px;
     }
-    &-title::before{
+
+    &-title::before {
         position: absolute;
         content: '';
         background-image: url(../img/features/leaflet.png);
@@ -232,86 +253,180 @@
         left: 0;
         top: 50%;
         transform: translate(-50%, -50%)
-       
-
     }
-    &-text{
+
+    &-text {
         color: #777777;
         font-size: 14px;
         line-height: 25px;
     }
 }
-.features__item:hover .features__item-title{
+
+.features__item:hover .features__item-title {
     color: #18cfab;
 }
-.pencil::before{
+
+.pencil::before {
     background-image: url(../img/features/pencil.png);
     width: 27px;
     height: 27px;
 }
-.magnifier::before{
+
+.magnifier::before {
     background-image: url(../img/features/magnifier.png);
     width: 28px;
     height: 28px;
 }
-.hourglass::before{
+
+.hourglass::before {
     background-image: url(../img/features/hourglass.png);
     width: 22px;
     height: 30px;
 }
-.notebook::before{
+
+.notebook::before {
     background-image: url(../img/features/notebook.png);
     width: 34px;
     height: 22px;
 }
-.tool::before{
+
+.tool::before {
     background-image: url(../img/features/tool.png);
     width: 24px;
     height: 24px;
 }
-.lamp::before{
+
+.lamp::before {
     background-image: url(../img/features/lamp.png);
     width: 20px;
     height: 35px;
 }
-.mega::before{
+
+.mega::before {
     background-image: url(../img/features/mega.png);
     width: 26px;
     height: 24px;
 }
-.custom::before{
+
+.custom::before {
     background-image: url(../img/features/custom.png);
     width: 27px;
     height: 22px;
 }
+
 // start features 
 
 // start about 
 
-.about{
+.about {
     background-color: black;
-    background-image: url(../img/about/about-bg.png);
-    background-repeat: no-repeat;
-    background-position: left bottom;
+    // background-image: url(../img/about/about-bg.png);
+    // background-repeat: no-repeat;
+    // background-position: left bottom;
     padding: 100px 0;
     position: relative;
 }
-.about__wrapper{
+
+.about__img {
+    max-width: 900px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.about__img div {
+    position: relative;
+    padding-bottom: 55.22%;
+}
+
+.about__img div img {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0px;
+}
+
+.about__wrapper {
     margin-left: auto;
     width: 558px;
+    // min-height: 675px;
 }
-.about__title{
+
+.about__title {
     color: #fff;
+    text-align: left;
+}
+
+.tabs {
+    display: flex;
+}
+
+.tab {
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #f5f5f5;
+    font-size: 16px;
+    margin-right: 22px;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    padding-top: 10px;
+
+}
+
+.tab.active {
+    color: #18cfab;
+}
+
+.active.tab::before {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: #18cfab;
+    top: 0px;
+    transform: translateX(0%);
+}
+
+.tab::before {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: #18cfab;
+    top: 0px;
+    transform: translateX(-101%);
+    transition: all .5s;
+}
+
+.tab:hover::before {
+    transform: translateX(0%);
+}
+
+.tab-item {
+    display: none;
+}
+
+.tab-item.active-tab {
+    display: block;
+}
+
+.tabs {
+    margin-bottom: 65px;
 }
 
 
 
-
-.progressbar { 
-	height: 40px;
+.progressbar {
+    height: 40px;
     border: 1px solid #959595;
     margin-top: 14px;
     border-radius: 3px;
+
     span {
         display: block;
         height: 100%;
@@ -323,21 +438,27 @@
         color: #fff;
         font-size: 13px;
         text-transform: uppercase;
-      }
+    }
 }
-.progressbar__user{
+
+.progressbar__user {
     background-color: #9c5da5;
 }
-.progressbar__web{
+
+.progressbar__web {
     background-color: #11b0de;
 }
-.progressbar__wp{
+
+.progressbar__wp {
     background-color: #d67f7f;
 }
-.progressbar__html{
+
+.progressbar__html {
     background-color: #20bc9d;
 }
-.progressbar__app{
+
+.progressbar__app {
     background-color: #bb8a36;
 }
+
 // end about 

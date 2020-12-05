@@ -36,11 +36,12 @@ body {
 }
 
 .title {
-  padding: 100px 0 141px;
   font-size: 36px;
   color: #4e4e4e;
   position: relative;
   text-align: center;
+  display: inline-block;
+  margin-bottom: 120px;
 }
 
 .title::before,
@@ -50,70 +51,17 @@ body {
   height: 1px;
   width: 75px;
   background-color: #18cfab;
-  bottom: 63px;
-  left: 45%;
+  top: calc(100% + 30px);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 30px;
 }
 
 .title::after {
-  bottom: 60px;
-  left: 47%;
-}
-
-.tab {
-  text-transform: uppercase;
-  cursor: pointer;
-  color: #f5f5f5;
-  font-size: 16px;
-  margin-right: 22px;
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
-  position: relative;
-}
-
-.tab.active {
-  color: #18cfab;
-}
-
-.tab::before,
-.tab::after {
-  position: absolute;
-  content: '';
-  height: 2px;
-  width: 0;
-  background-color: #18cfab;
-  top: -11px;
-}
-
-.tab::after {
-  left: 0;
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
-}
-
-.tab:hover {
-  color: #18cfab;
-}
-
-.tab:hover.tab::after {
-  width: 100%;
-}
-
-.tab.active::before {
-  width: 100%;
-}
-
-.tab-item {
-  display: none;
-}
-
-.tab-item.active-tab {
-  display: block;
-}
-
-.tabs {
-  margin-bottom: 51px;
+  top: calc(100% + 35px);
+  left: 53%;
 }
 
 .header__wrapper {
@@ -448,11 +396,31 @@ body {
 
 .about {
   background-color: black;
-  background-image: url(../img/about/about-bg.png);
-  background-repeat: no-repeat;
-  background-position: left bottom;
   padding: 100px 0;
   position: relative;
+}
+
+.about__img {
+  max-width: 900px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.about__img div {
+  position: relative;
+  padding-bottom: 55.22%;
+}
+
+.about__img div img {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0px;
 }
 
 .about__wrapper {
@@ -462,6 +430,77 @@ body {
 
 .about__title {
   color: #fff;
+  text-align: left;
+}
+
+.tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tab {
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #f5f5f5;
+  font-size: 16px;
+  margin-right: 22px;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  padding-top: 10px;
+}
+
+.tab.active {
+  color: #18cfab;
+}
+
+.active.tab::before {
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 100%;
+  background-color: #18cfab;
+  top: 0px;
+  -webkit-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.tab::before {
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 100%;
+  background-color: #18cfab;
+  top: 0px;
+  -webkit-transform: translateX(-101%);
+      -ms-transform: translateX(-101%);
+          transform: translateX(-101%);
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+.tab:hover::before {
+  -webkit-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.tab-item {
+  display: none;
+}
+
+.tab-item.active-tab {
+  display: block;
+}
+
+.tabs {
+  margin-bottom: 65px;
 }
 
 .progressbar {
