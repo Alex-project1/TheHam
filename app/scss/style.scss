@@ -197,9 +197,19 @@
     flex-wrap: wrap;
     margin-bottom: 30px;
 }
+
+.features__item:hover{
+      box-shadow:
+   0 1px 4px rgba(0, 0, 0, .3),
+   -23px 0 20px -23px rgba(0, 0, 0, .8),
+   23px 0 20px -23px rgba(0, 0, 0, .8),
+   0 0 40px rgba(0, 0, 0, .1) inset;
+}
 .features__item{
     width: 331px;
     margin-bottom: 70px;
+    padding: 20px;
+    transition: all .3s;
     
     &-title{
         
@@ -275,3 +285,59 @@
     height: 22px;
 }
 // start features 
+
+// start about 
+
+.about{
+    background-color: black;
+    background-image: url(../img/about/about-bg.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    padding: 100px 0;
+    position: relative;
+}
+.about__wrapper{
+    margin-left: auto;
+    width: 558px;
+}
+.about__title{
+    color: #fff;
+}
+
+
+
+
+.progressbar { 
+	height: 40px;
+    border: 1px solid #959595;
+    margin-top: 14px;
+    border-radius: 3px;
+    span {
+        display: block;
+        height: 100%;
+        border-bottom-right-radius: 3px;
+        border-top-right-radius: 3px;
+        display: flex;
+        align-items: center;
+        padding-left: 14px;
+        color: #fff;
+        font-size: 13px;
+        text-transform: uppercase;
+      }
+}
+.progressbar__user{
+    background-color: #9c5da5;
+}
+.progressbar__web{
+    background-color: #11b0de;
+}
+.progressbar__wp{
+    background-color: #d67f7f;
+}
+.progressbar__html{
+    background-color: #20bc9d;
+}
+.progressbar__app{
+    background-color: #bb8a36;
+}
+// end about 
